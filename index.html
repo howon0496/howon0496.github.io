@@ -107,9 +107,9 @@
 
         async function predict() {
             var dic_class2information = {};
-            dic_class2information['안유진'] = '스타쉽엔터테인먼트 소속 6인조 걸그룹 IVE의 멤버.';
-            dic_class2information['김채원'] = '쏘스뮤직 소속 5인조 걸그룹 LE SSERAFIM의 멤버.';
-            dic_class2information['조유리'] = '웨이크원 출신으로 걸그룹 IZ*ONE의 멤버로 활동했으며 현재 솔로 가수 겸 배우.';
+            dic_class2information['안유진'] = '스타쉽엔터테인먼트 소속 6인조 걸그룹 IVE의 멤버';
+            dic_class2information['김채원'] = '쏘스뮤직 소속 5인조 걸그룹 LE SSERAFIM의 멤버';
+            dic_class2information['조유리'] = '웨이크원 출신으로 걸그룹 IZ*ONE의 멤버로 활동했으며 현재 솔로 가수 겸 배우';
             var image = document.getElementById("face-image");
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
